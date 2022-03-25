@@ -68,7 +68,7 @@ body {
 
 a {
   color: var(--color-text-link);
-  text-decoration: none;
+  text-decoration: underline;
 
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
@@ -90,7 +90,7 @@ a {
 
 a:hover {
   color: var(--color-text-link-hover);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:focus-visible {
@@ -99,8 +99,7 @@ a:focus-visible {
 }
 
 h1{
-  font-size: 43px;
-  line-height: 43px;
+  font-size: 38px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
@@ -132,14 +131,14 @@ h4, h5, h6{
 }
 
 p{
-  font-size: 20.5px;
+  font-size: 18px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
 }
 
 ol, ul{
-  font-size: 20.5px;
+  font-size: 18px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
@@ -208,7 +207,8 @@ main{
 
 .chapter-content-images{
   width:15vw;
-  font-family: Helvetica;
+  font-size: 25px;
+  font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
   text-align: center;
@@ -225,9 +225,7 @@ main{
 
 .footnotes-style p, .footnotes-style em, .footnotes-style a{
   color:#75a389;
-  font-size: 15px;
-  line-height: 16px;
-  font-family: Baskerville;
+  font-size:12px;
 }
 
 .footnotes-style a:hover{
@@ -353,15 +351,11 @@ header {
     flex-direction:column-reverse;
     flex-wrap:nowrap;
     width:100%;
+    background-color: #FF0;
   }
 
   .chapter-content-text, .chapter-content-images{
     width:100%;
-  }
-
-  .colophon-content {
-    font-size: 15px;
-    text-align: center;
   }
 
   nav, section, main{
@@ -371,6 +365,11 @@ header {
   nav{
     position:relative;
   }
+
+
+
+
+
 
   /* utilities */
 
