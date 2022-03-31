@@ -34,7 +34,8 @@
 
 :root {
   /* Color settings */
-  --color-background: rgba(235, 229, 229, 1);
+  /* --color-background: #ebe5e5; */
+  background: linear-gradient(180deg, rgba(235,229,229,1) 20%, rgba(229, 234, 244, 1) 40%, rgba(244, 232, 216, 1) 60%, rgba(235,229,229,1) 80%);
   --color-text: rgba(0,0,0,1);
   --color-text-link: rgb(57, 44, 51);
   --color-text-link-hover: rgba(0,0,255,0.4);
@@ -99,7 +100,7 @@ a:focus-visible {
 }
 
 h1{
-  font-size: 43px;
+  font-size: 40px;
   line-height: 43px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
@@ -132,14 +133,14 @@ h4, h5, h6{
 }
 
 p{
-  font-size: 20.5px;
+  font-size: 19.5px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
 }
 
 ol, ul{
-  font-size: 20.5px;
+  font-size: 15.5px;
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   font-weight: lighter;
@@ -184,9 +185,13 @@ div.page-wrapper {
 
 nav{
   position: sticky;
-  top: 0;
+  top: 0.875rem;
   width:35%;
   align-self: flex-start;
+}
+
+li.is-head-list-item{
+  margin-top:0.7rem;
 }
 
 /* content */
@@ -194,6 +199,18 @@ nav{
 main{
   width:80%;
 }
+
+.content-video {
+  position: relative;
+}
+
+
+.content-video video{
+  width:100%;
+  height:auto;
+  margin:0;padding:0;
+}
+
 
 .chapter-container{
   width:100%;
@@ -216,7 +233,7 @@ main{
   top:15vw;
   align-self: flex-start;
   line-height: 15px;
-  color: #75a389;
+  color: #6a8f7a;
   margin-left: : .5rem;
   margin-right: .5rem;
   margin-bottom: .5rem;
@@ -224,9 +241,9 @@ main{
 }
 
 .footnotes-style p, .footnotes-style em, .footnotes-style a{
-  color:#75a389;
-  font-size: 15px;
-  line-height: 16px;
+  color: #6a8f7a;
+  font-size: 15.5px;
+  line-height: 17.5px;
   font-family: Baskerville;
 }
 
@@ -239,7 +256,7 @@ figcaption {
   font-family: Baskerville;
   color: rgb(57, 44, 51);
   color: black;
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 2px;
   text-align: center;
 }
@@ -263,6 +280,13 @@ figcaption {
 header {
   margin-bottom: 3rem
 }
+
+.colophon-content p{
+  font-size:0.5rem;
+  font-family: "Courier", monospace;
+  text-align:center;
+}
+
 
 /* GENERAL USABILITY */
 
@@ -359,10 +383,7 @@ header {
     width:100%;
   }
 
-  .colophon-content {
-    font-size: 15px;
-    text-align: center;
-  }
+
 
   nav, section, main{
     width:100%;
@@ -370,6 +391,8 @@ header {
 
   nav{
     position:relative;
+    top:0;
+    margin-bottom:1rem;
   }
 
   /* utilities */
